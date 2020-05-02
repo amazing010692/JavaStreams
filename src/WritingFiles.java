@@ -9,6 +9,7 @@ public class WritingFiles {
 		
 		//Stream Connectivity
 		File f = new File(System.getProperty("user.dir") + "\\src\\MyTextFile.csv" );
+		//File f = new File(System.getProperty("user.dir") + "\\src\\MyTextFile.txt" );
 		//File f = new File("C:\\Users\\Janielle Gregorio\\Documents\\Java_Tests\\JavaStreams\\src\\MyTextFile.csv");
 		//true is append; false is overwrite; false by default
 		FileWriter fw = new FileWriter(f, true);
@@ -20,6 +21,7 @@ public class WritingFiles {
 				
 				int num = (int)(Math.random() * 100);
 				writer.write(num + ",");
+				//writer.write(num + "\t");
 				
 			}
 			writer.newLine();
